@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 mkdir /home/pub
 mkdir /home/adm
