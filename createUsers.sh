@@ -1,14 +1,16 @@
 #!/bin/bash
-
+echo 'Creating directories...'
 mkdir /home/pub
 mkdir /home/adm
 mkdir /home/ven
 mkdir /home/sec
 
+echo 'Creating groups...'
 groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
 
+echo 'Creating users...'
 useradd jeferson -m -s /bin/bash -p $(openssl passwd -crypt senha1234) -G GRP_ADM
 useradd andre -m -s /bin/bash -p $(openssl passwd -crypt senha1234) -G GRP_ADM
 useradd joana -m -s /bin/bash -p $(openssl passwd -crypt senha1234) -G GRP_ADM
@@ -37,3 +39,5 @@ chmod 770 /home/adm
 chmod 770 /home/ven
 chmod 770 /home/sec
 chmod 777 /home/pub
+
+echo 'All done!'
