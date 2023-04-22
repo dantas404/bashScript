@@ -37,4 +37,3 @@ chmod 770 /home/adm
 chmod 770 /home/ven
 chmod 770 /home/sec
 chmod 777 /home/pub
-
